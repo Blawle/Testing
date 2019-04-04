@@ -1,4 +1,5 @@
-import pythoncom, import pyHook
+import pythoncom
+import pyHook
 
 def keypressed(event):
     global store
