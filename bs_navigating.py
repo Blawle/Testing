@@ -22,7 +22,7 @@ html = """
 """
 
 soup = BeautifulSoup(html, "html.parser")
-# data = soup.body.contents[1].next_sibling.next_sibling
+data1 = soup.body.contents[1].next_sibling.next_sibling
 # data = soup.find(class_="super-special").parent.parent
 # data = soup.find(id="first").find_next_sibling().find_next_sibling()
 # data = soup.select("[data-example]")[1].find_previous_sibling()
@@ -30,3 +30,4 @@ soup = BeautifulSoup(html, "html.parser")
 data = soup.find("h3").find_parent("html")
 
 print(data)
+print(data1)
