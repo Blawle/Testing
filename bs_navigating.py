@@ -23,11 +23,13 @@ html = """
 
 soup = BeautifulSoup(html, "html.parser")
 data1 = soup.body.contents[1].next_sibling.next_sibling
-# data = soup.find(class_="super-special").parent.parent
-# data = soup.find(id="first").find_next_sibling().find_next_sibling()
+data2 = soup.find(class_="super-special").parent.parent
+data3 = soup.find(id="first").find_next_sibling().find_next_sibling()
 # data = soup.select("[data-example]")[1].find_previous_sibling()
 # data = soup.find(class_="super-special").find_next_sibling(class_="special")
 data = soup.find("h3").find_parent("html")
 
 print(data)
 print(data1)
+print(data2)
+print(data3)
