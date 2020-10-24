@@ -24,10 +24,10 @@ html = """
 soup = BeautifulSoup(html, "html.parser")
 attr = soup.find("div")["id"]
 print(attr)
-# el = soup.select(".special")[0]
-# print(el.get_text())
-# # print(d)
-# for el in soup.select(".special"):
-#     # print(el.get_text())
-#     print(el.name)
-#     print(el.attrs['class'])
+el = soup.select(".special")[0]
+print(el.get_text())
+print(d)
+for el in soup.select(".special"):
+    print(el.get_text())
+    print(el.name)
+    print(el.attrs['class'])
