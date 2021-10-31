@@ -26,7 +26,7 @@ def getKey():
 def getTranslatedMessage(mode, message, key):
     if mode[0] == 'd':
         key = -key
-    translated = "
+    translated = ''
 
     for symbol in message:
         if symbol.isalpha():
