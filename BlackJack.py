@@ -10,7 +10,6 @@ Only one player and automated dealer
 
 # Setup imports
 import random
-import math
 
 # Setup Card Deck
 suits = (
